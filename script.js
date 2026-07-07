@@ -314,7 +314,7 @@ function updatePromoMessage(customText = '', type = '') {
   }
 
   if (!state.activePromo) {
-    els.promoMessage.textContent = 'Доступные тестовые промокоды: FLY300, FLY500, SET1000, SALE10.';
+    els.promoMessage.textContent = 'Введите промокод, если он есть. Скидка будет показана в карточках товаров.';
     els.promoClear.hidden = true;
     return;
   }

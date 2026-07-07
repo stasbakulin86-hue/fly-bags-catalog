@@ -332,3 +332,77 @@ h2 { font-size: clamp(28px, 4vw, 42px); line-height: 1.02; letter-spacing: -0.04
   .promo-form { grid-template-columns: 1fr; }
   .promo-form button { width: 100%; }
 }
+
+/* Контакты */
+.contacts-section {
+  padding-top: 18px;
+  padding-bottom: 58px;
+}
+.contacts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+.contact-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  padding: 24px;
+  box-shadow: 0 14px 34px rgba(0,40,86,.06);
+}
+.contact-top {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+.contact-pin {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  border-radius: 16px;
+  background: var(--yellow);
+}
+.contact-card h3 {
+  color: var(--dark-blue);
+  font-size: 24px;
+  margin: 0 0 6px;
+}
+.contact-card p {
+  color: #31445f;
+  font-weight: 800;
+  margin: 0;
+}
+.contact-detail {
+  display: grid;
+  gap: 5px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 16px;
+}
+.contact-detail b {
+  color: var(--muted);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+.contact-detail span {
+  color: var(--dark-blue);
+  font-size: 17px;
+  font-weight: 900;
+}
+.contact-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.contact-actions .btn {
+  min-height: 44px;
+}
+@media (max-width: 760px) {
+  .contacts-grid { grid-template-columns: 1fr; }
+  .contact-actions .btn { width: 100%; }
+}
