@@ -1,0 +1,35 @@
+[
+  {
+    "code": "FLY300",
+    "title": "Скидка 300 ₽ на любой чемодан от 2 990 ₽",
+    "type": "fixed",
+    "value": 300,
+    "minPrice": 2990,
+    "active": true
+  },
+  {
+    "code": "FLY500",
+    "title": "Скидка 500 ₽ на чемоданы M и L",
+    "type": "fixed",
+    "value": 500,
+    "sizes": ["M", "L"],
+    "minPrice": 3500,
+    "active": true
+  },
+  {
+    "code": "SET1000",
+    "title": "Скидка 1 000 ₽ на наборы чемоданов",
+    "type": "fixed",
+    "value": 1000,
+    "categories": ["Наборы"],
+    "active": true
+  },
+  {
+    "code": "SALE10",
+    "title": "Скидка 10% на товары от 4 000 ₽",
+    "type": "percent",
+    "value": 10,
+    "minPrice": 4000,
+    "active": true
+  }
+]
